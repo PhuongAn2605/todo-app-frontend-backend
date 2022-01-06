@@ -6,8 +6,7 @@ const bodyParser = require('body-parser');
 const HttpError = require('./models/http-error');
 const todoRoutes = require('./routes/todo-routes');
 
-const DATABASE_NAME = 'todo-items';
-const MONGO_URL = `mongodb://localhost:27017/${DATABASE_NAME}`;
+const MONGO_URL = `mongodb://${process.env.DATABASE_HOST}/${DATABASE_NAME}`;
 
 const app = express();
 
