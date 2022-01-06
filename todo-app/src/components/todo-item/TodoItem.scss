@@ -1,0 +1,48 @@
+.todo-item{
+    background-color: #fff;
+    width: 500px;
+    margin: auto !important;
+    border: 1px solid #ccc;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    input{
+        border: none;
+        padding: 1rem;
+        background-color: #eee;
+        width: 100%;
+
+    }
+    div{
+        border: none;
+        padding: 1rem;
+    }
+    
+    input:focus{
+        outline: none !important;
+        width: 100%;
+        border-bottom:  #ddd;
+        background-color: #eee;
+
+        font-size: normal;
+    }
+
+    &__title{
+        &--completed{
+            text-decoration: line-through;
+            color: #bbb;
+            margin-left: 1rem;
+
+        }
+        &--uncompleted{
+            margin-left: 1rem;
+        }
+    }
+    .icons{
+        margin-left: auto;
+        display: flex;
+    }
+}
